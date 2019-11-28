@@ -15,8 +15,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
 
             startActivity(intent)
-
         }
+
+        mapIcon.setOnClickListener {
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }
